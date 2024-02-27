@@ -5,7 +5,7 @@ include 'Models/Productos.php';
 include 'Controllers/Carrito.php';
 include 'Template/Navbar.php';
 ?>
-
+<!--Subiendo el proyecto a github-->
 <div class="container mt-5 p-3">
     <!--SUBIENDO CAMBIOS A LA RAMA DEVELOP-->
     <br>
