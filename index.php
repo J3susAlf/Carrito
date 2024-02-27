@@ -7,6 +7,7 @@ include 'Template/Navbar.php';
 ?>
 
 <div class="container mt-5 p-3">
+    <!--SUBIENDO CAMBIOS A LA RAMA DEVELOP-->
     <br>
     <!--VERIFICA QUE SEA DIFERENTE DE VACÍO-->
     <?php if ($mensaje != "") { ?>
