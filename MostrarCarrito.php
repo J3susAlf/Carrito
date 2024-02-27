@@ -4,7 +4,7 @@ include 'Controllers/Carrito.php';
 include 'Template/Navbar.php';
 ?>
 <link rel="stylesheet" href="css/MostrarCarrito.css">
-<div class="container mt-5">
+<div class="container">
     <div class="container ">
         <h3 class="">Lista de productos</h3>
         <?php if (!empty($_SESSION['CARRITO'])) { ?>
@@ -39,7 +39,8 @@ include 'Template/Navbar.php';
                         </tr>
                         <?php $total = $total + ($producto['Precio'] * $producto['Cantidad']); ?>
                     <?php }
-                    echo $producto['Id_productos']; ?>
+                    //echo $producto['Id_productos']; 
+                    ?>
                     <tr>
                         <td colspan="3" align="right">
                             <h3>Total</h3>

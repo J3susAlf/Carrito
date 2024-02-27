@@ -43,10 +43,9 @@ class Productos extends DB
             echo "Error en la inserción: " . $e->getMessage();
         }
 
-        var_dump($Id_productos);
+        // var_dump($Id_productos);
         // Segunda consulta
         if ($Id_productos !== null) {
-            echo "Id_productos no es nulo. Valor: ", $Id_productos;
             $query2 = $this->connect()->prepare('INSERT INTO detalle_venta (Id_Detalle_De_Venta, Id_Ventas, Id_productos, Precio_Unitario, Cantidad, Descargado) VALUES 
         (NULL, :Id_Ventas, :Id_productos, :Precio_Unitario, :Cantidad, 0)');
             $query2->bindParam(':Id_Ventas', $ultimoId);
@@ -61,7 +60,7 @@ class Productos extends DB
             echo "Error: 'Id_productos' es nulo.";
         }
 
-        return $ultimoId;
+        //return $ultimoId;
     }
 
 
